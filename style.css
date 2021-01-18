@@ -1,0 +1,428 @@
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 0.8fr 2fr;
+  width: 65%;
+  margin: auto;
+}
+
+/*----------------------------------------------------PHOTO-----------------------------------------------*/
+.photo {
+  background-color: #feca07;
+  display: flex;
+  justify-content: center;
+}
+h6 {
+  padding-left: 4em;
+}
+.photo--style {
+  width: 75%;
+  border: black;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 1em;
+}
+
+/*-------------------------------------------------------------NOM PRENOM JOB------------------------------------------------------------*/
+.nom-prenom-job {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  padding-left: 1.3em;
+  margin-bottom: 0em;
+  font-size: 3.2em;
+}
+.style--matteo {
+  font-weight: bold;
+  color: #feca07;
+}
+span.style--drouin {
+  font-size: 1em;
+  color: black;
+  font-weight: lighter;
+}
+.style--developpeur {
+  font-size: 1.5em;
+  color: #4a4a4a;
+  padding-left: 3em;
+  margin-top: 0em;
+}
+span.underline--developpeur {
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #feca07;
+}
+
+/*--------------------CONTACT------------------------------------------------------------*/
+.contact {
+  background-color: #feca07;
+  display: flex;
+  flex-direction: column;
+}
+.contact__text {
+  font-weight: bold;
+  justify-content: space-around;
+  padding-left: 2em;
+}
+
+/*-------------------FORMATION------------------------------------------------------------*/
+.formation {
+  margin-top: 1em;
+  padding-left: 2em;
+  padding-bottom: 2em;
+}
+
+/*-----------------------A PROPOS DE MOI------------------------------------------------------------*/
+.a-propos-de-moi {
+  background-color: #feca07;
+}
+.a-propos-de-moi__text {
+  color: #404040;
+  text-align: left;
+  padding-left: 3em;
+  padding-right: 2em;
+}
+
+/*---------------EXPERIENCE PROFESSIONELLE------------------------------------------------------------*/
+.experience-professionelle {
+  padding-top: 4em;
+  padding-left: 2em;
+  padding-bottom: 2em;
+}
+
+/*-----------------------LOISIRS------------------------------------------------------------*/
+.loisirs {
+  padding-top: 3em;
+  background-color: #feca07;
+}
+.flex__loisirs {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.3em;
+}
+.fa-futbol,
+.fa-music,
+.fa-running {
+  border-style: solid;
+  border-radius: 50%;
+  color: #444444;
+  font-size: 2.5em;
+  padding-top: 0.2em;
+  padding-left: 0.2em;
+  padding-bottom: 0.2em;
+  padding-right: 0.2em;
+}
+
+/*---------------------RECOMMANDATION------------------------------------------------------------*/
+.recommandation {
+  padding-left: 2em;
+  padding-bottom: 1em;
+}
+div.conteneur__recommandation-items {
+  display: flex;
+}
+.recommandation--left {
+  flex: 1;
+}
+.recommandation--right {
+  flex: 1;
+}
+
+/*----------------------- GLOBAL --------------------------------*/
+h2 {
+  background-color: #404040;
+  color: #feca07;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+h3 {
+  color: black;
+  font-size: 1.5em;
+  margin-left: 1.6em;
+  font-weight: bold;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #feca07;
+  padding-bottom: 6px;
+}
+
+/*----------------------DISPOSITION DES PARTIES FORMATION ET EXPERIENCE PROFESSIONELLE------------------------------------------------------------*/
+.sous-partie__formation-experienceprofessionelle {
+  display: flex;
+  padding-top: 2em;
+}
+h5.sous-partie--left {
+  flex: 1;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 2em;
+  font-size: 0.8em;
+}
+.sous-partie--right {
+  flex: 2;
+}
+h4 {
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #404040;
+}
+/*-------------------------------------------------------------CHANGEMENTS------------------------------------------------------------*/
+li {
+  list-style: none;
+  color: #4a4a4a;
+}
+span.align {
+  padding-left: 1.3em;
+}
+span.align--bigdot {
+  padding-left: 1.7em;
+}
+.bold--recommandation {
+  font-weight: bold;
+}
+
+/*-------------------------------------------------------------STYLE DES PUCES------------------------------------------------------------*/
+.fa-graduation-cap,
+.fa-suitcase,
+.fa-pencil-alt {
+  color: #feca07;
+  padding-right: 0.5em;
+  font-size: 1.5em;
+}
+.fa-dot-circle {
+  color: #feca07;
+  font-size: 1.1em;
+  padding-right: 0.2em;
+}
+.fa-circle {
+  color: #feca07;
+  font-size: 0.8em;
+  padding-right: 0.2em;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: black;
+  color: #404040;
+}
+
+/*-----------------------------RESPONSIVE----------------------------------------*/
+@media screen and (max-width: 1240px) {
+  body {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1110px) {
+  body {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 951px) {
+  body {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 897px) {
+  body {
+    width: 100%;
+  }
+  .contact__text {
+    padding-left: 1em;
+    font-size: 0.9em;
+  }
+  div.sous-partie--right {
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .photo--style {
+    width: 90%;
+  }
+  h6 {
+    padding-left: 2em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  section.formation {
+    padding-left: 0em;
+  }
+  section.recommandation {
+    padding-left: 0em;
+  }
+  section.experience-professionelle {
+    padding-left: 0em;
+  }
+  h1.style--matteo {
+    padding-left: 0.5em;
+  }
+  .style--developpeur {
+    padding-left: 1.2em;
+  }
+  div.flex__loisirs {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 670px) {
+  h6 {
+    padding-left: 1em;
+  }
+  h1.style--matteo {
+    font-size: 2em;
+  }
+  .style--developpeur {
+    font-size: 1.3em;
+    padding-left: 0.8em;
+  }
+  h2 {
+    font-size: 0.9em;
+  }
+  h3 {
+    font-size: 0.9em;
+  }
+  div.sous-partie--right {
+    font-size: 0.7em;
+  }
+  h5.sous-partie--left {
+    font-size: 0.7em;
+  }
+  .contact__text {
+    font-size: 0.7em;
+  }
+  .a-propos-de-moi__text {
+    font-size: 0.7em;
+  }
+  div.conteneur__recommandation-items {
+    font-size: 0.7em;
+  }
+  div.flex__loisirs {
+    font-size: 0.7em;
+  }
+  section.experience-professionelle {
+    padding-top: 0em;
+  }
+  .recommandation--left {
+    padding-left: 1.5em;
+  }
+}
+@media screen and (max-width: 520px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .photo {
+    order: 1;
+  }
+  .nom-prenom-job {
+    order: 2;
+  }
+  .contact {
+    order: 6;
+  }
+  .formation {
+    order: 3;
+  }
+  .experience-professionelle {
+    order: 4;
+  }
+  .a-propos-de-moi {
+    order: 8;
+  }
+  .loisirs {
+    order: 7;
+  }
+  .recommandation {
+    order: 5;
+  }
+
+  .photo--style {
+    max-width: 160px;
+    margin: auto;
+  }
+  header {
+    margin: auto;
+  }
+  .contact__text {
+    margin: auto;
+    margin-left: 12em;
+    padding-bottom: 0.5em;
+  }
+  div.sous-partie__formation-experienceprofessionelle {
+    padding-top: 0em;
+  }
+  h3 {
+    justify-content: center;
+  }
+  section.loisirs {
+    padding-top: 0em;
+  }
+  div.flex__loisirs {
+    padding-top: 2em;
+  }
+}
+@media screen and (max-width: 494px) {
+  div.flex__loisirs {
+    padding-top: 0em;
+    padding-bottom: 0.5em;
+  }
+}
+@media screen and (max-width: 422px) {
+  .contact__text {
+    margin-left: 10em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contact__text {
+    margin-left: 8em;
+  }
+}
+@media screen and (max-width: 360px) {
+  div.sous-partie__formation-experienceprofessionelle {
+    display: flex;
+    flex-direction: column;
+  }
+  h5.sous-partie--left {
+    flex: 1;
+  }
+  div.sous-partie--right {
+    flex: 2;
+    padding-left: 3em;
+  }
+  h3 {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .contact__text {
+    margin-left: 6em;
+  }
+}
+@media screen and (max-width: 313px) {
+  .contact__text {
+    margin-left: 4em;
+  }
+}
+@media screen and (max-width: 290px) {
+  h1.style--matteo {
+    font-size: 1.3em;
+  }
+  .style--developpeur {
+    font-size: 1em;
+    padding-left: 0.6em;
+  }
+  h3 {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 277px) {
+  .contact__text {
+    margin-left: 2em;
+  }
+}
