@@ -390,6 +390,7 @@ a:hover {
   }
   h5.sous-partie--left {
     flex: 1;
+    margin-bottom: 0rem;
   }
   article.sous-partie--right {
     flex: 2;
